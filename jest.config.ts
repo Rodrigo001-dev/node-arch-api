@@ -175,10 +175,10 @@ export default {
   // A map from regular expressions to paths to transformers
   transform: {
     "^.+\\.(t|j)sx?$": [
-      "swc/jest",
+      "@swc/jest",
       {
         jsc: {
-          parse: {
+          parser: {
             syntax: 'typescript',
             tsx: false,
             decorators: true,
